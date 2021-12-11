@@ -21,7 +21,7 @@ print(luas, "CM")
 # Pembagian
 kue = 40
 anak = 8
-kueperanak = kue / anak
+kueperanak = kue // anak
 print( "Setiap anak mendapatakan kue sebanyak : ",kueperanak)
 
 # Sisa bagi / Modulus
