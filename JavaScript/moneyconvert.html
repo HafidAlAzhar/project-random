@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Converter</title>
+</head>
+
+<body>
+    <center>
+        <h2 style="font-family: Georgia, 'Times New Roman', Times, serif
+    ;">Money converter</h2>
+        <!-- Money Input -->
+        <form action="#" method="post" name="mc" id="myForm">
+            USD: <input type="number" name="dollar" id="dollar">
+            <!-- Money Option -->
+            Convert to: <select name="convert" id="convert">
+                <option value="1">IDR</option>
+                <option value="2">JPY</option>
+                <option value="3">MYR</option>
+                <option value="4">EUR</option>
+            </select>
+        </form>
+        <br>
+        <input type="button" name="submit" value="Convert" onclick="konversi()"><br>
+        <p id="Hasil"></p>
+    </center>
+
+    <script>
+        // Convertion Process
+        function konversi() {
+            var usd = document.getElementById("dollar").value;
+            var convert = document.getElementById("convert").value;
+            if (convert == 1) {
+                result = usd * 14385;
+                document.getElementById("Hasil").innerHTML = usd + " USD = " + result + " Rupiah"
+            } else if (convert == 2) {
+                result = usd * 114;
+                document.getElementById("Hasil").innerHTML = usd + " USD = " + result + " Yen"
+            } else if (convert == 3) {
+                result = usd * 4.22;
+                document.getElementById("Hasil").innerHTML = usd + " USD = " + result + " Ringgit"
+            } else if (convert == 4) {
+                result = usd * 0.89;
+                document.getElementById("Hasil").innerHTML = usd + " USD = " + result + " Euro"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
