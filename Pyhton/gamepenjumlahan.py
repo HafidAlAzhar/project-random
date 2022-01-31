@@ -5,7 +5,7 @@ b = int(input("Silahkan masukan angka 2 : "))
 
 hasil = (a + b)
 
-jwb = int(input(f"Kalikan Angka Angka Berikut {a} + {b} : "))
+jwb = int(input(f"Jumlahkan Angka Angka Berikut {a} + {b} : "))
 
 if jwb == hasil:
     print("Selamat jawaban anda benar")
